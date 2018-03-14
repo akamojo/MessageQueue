@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Message Queue</string>
+  </property>
+  <widget class="QGroupBox" name="connGroup">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>341</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Connect</string>
+   </property>
+   <widget class="QSpinBox" name="connPort">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>653333828</number>
+    </property>
+    <property name="value">
+     <number>1234</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="connHost">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>192.168.1.121</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>30</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GO</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="msgGroup">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>451</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Messages</string>
+   </property>
+   <widget class="QTextEdit" name="msgRecv">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>391</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pubButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>320</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PUBLISH</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="msgTagInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="msgInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>391</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tagLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tag:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Text of message:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="msgLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Messages you receive:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="publishLabel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>260</y>
+      <width>151</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Publish new message</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="tagGroup">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>301</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Tags</string>
+   </property>
+   <widget class="QLineEdit" name="tagInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tagList">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>141</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="subButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>30</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SUBSCRIBE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tagsLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tags you subscribe:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
